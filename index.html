@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./Image/logo.png" rel="icon" type="image/png">
+    <link href="styles/app.css" rel="stylesheet">
+    <link href="styles/swiper-bundle.min.css" rel="stylesheet" >
+    <title>Global Charity</title>
+</head>
+<body class="font-Poppins bg-gray-250 text-brown-100">
+<!-- All App Icon -->
+<svg class="hidden">
+    <symbol id="arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+        <path fill-rule="evenodd" d="M10 17a.75.75 0 0 1-.75-.75V5.612L5.29 9.77a.75.75 0 0 1-1.08-1.04l5.25-5.5a.75.75 0 0 1 1.08 0l5.25 5.5a.75.75 0 1 1-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0 1 10 17Z" clip-rule="evenodd" />
+    </symbol>
+    <symbol id="money" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 100.58" style="enable-background:new 0 0 122.88 100.58" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class="st0" d="M29.83,87.77V50.85h16.61c7.04,1.26,14.08,5.08,21.12,9.51h12.9c5.84,0.35,8.9,6.27,3.22,10.16 c-4.52,3.32-10.49,3.13-16.61,2.58c-4.22-0.21-4.4,5.46,0,5.48c1.53,0.12,3.19-0.24,4.64-0.24c7.63-0.01,13.92-1.47,17.77-7.5 l1.93-4.51l19.19-9.51c9.6-3.16,16.43,6.88,9.35,13.87c-13.9,10.11-28.15,18.43-42.73,25.15c-10.59,6.44-21.18,6.22-31.76,0 L29.83,87.77L29.83,87.77z M42.41,0l71.41,19.13l-9.95,37.13L32.46,37.13L42.41,0L42.41,0z M76.08,17.22 c6.04,1.62,9.62,7.81,8,13.85c-1.62,6.04-7.81,9.62-13.85,8c-6.04-1.62-9.62-7.81-8-13.85C63.84,19.18,70.03,15.6,76.08,17.22 L76.08,17.22z M52.83,8.85l47.48,12.72c-0.81,3.02,0.99,6.15,4.02,6.95l-3.93,14.68c-3.02-0.81-6.15,0.99-6.95,4.02L45.96,34.5 c0.81-3.02-0.99-6.14-4.02-6.95l3.93-14.68C48.89,13.68,52.02,11.88,52.83,8.85L52.83,8.85z M0,47.3h24.83v44.18H0V47.3L0,47.3z"/></g></symbol>
+    <symbol id="check-mark" fill="currentColor" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 117.72 117.72" style="enable-background:new 0 0 117.72 117.72" xml:space="preserve"><style type="text/css"><![CDATA][].st0{fill:#f6cc76;}]]></style><g><path class="st0" d="M58.86,0c9.13,0,17.77,2.08,25.49,5.79c-3.16,2.5-6.09,4.9-8.82,7.21c-5.2-1.89-10.81-2.92-16.66-2.92 c-13.47,0-25.67,5.46-34.49,14.29c-8.83,8.83-14.29,21.02-14.29,34.49c0,13.47,5.46,25.66,14.29,34.49 c8.83,8.83,21.02,14.29,34.49,14.29s25.67-5.46,34.49-14.29c8.83-8.83,14.29-21.02,14.29-34.49c0-3.2-0.31-6.34-0.9-9.37 c2.53-3.3,5.12-6.59,7.77-9.85c2.08,6.02,3.21,12.49,3.21,19.22c0,16.25-6.59,30.97-17.24,41.62 c-10.65,10.65-25.37,17.24-41.62,17.24c-16.25,0-30.97-6.59-41.62-17.24C6.59,89.83,0,75.11,0,58.86 c0-16.25,6.59-30.97,17.24-41.62S42.61,0,58.86,0L58.86,0z M31.44,49.19L45.8,49l1.07,0.28c2.9,1.67,5.63,3.58,8.18,5.74 c1.84,1.56,3.6,3.26,5.27,5.1c5.15-8.29,10.64-15.9,16.44-22.9c6.35-7.67,13.09-14.63,20.17-20.98l1.4-0.54H114l-3.16,3.51 C101.13,30,92.32,41.15,84.36,52.65C76.4,64.16,69.28,76.04,62.95,88.27l-1.97,3.8l-1.81-3.87c-3.34-7.17-7.34-13.75-12.11-19.63 c-4.77-5.88-10.32-11.1-16.79-15.54L31.44,49.19L31.44,49.19z"/></g></symbol>
+    <symbol id="education" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" /></symbol>
+    <symbol id="drop" fill='currentColor' version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" overflow="visible" xml:space="preserve"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="77.2641" y1="249.7536" x2="423.5034" y2="249.7536"><stop  offset="0" style="stop-color:#9C79FF"/><stop  offset="1" style="stop-color:#7BCBFF"/></linearGradient><path d="M251.8,9.8c6.5,0,13,3.1,16.9,9.3c38.7,61.5,131.1,208.8,137.6,222.3c31.1,64.5,19.9,144.2-33.5,197.7c-33.8,33.8-78.1,50.7-122.4,50.7c-44.3,0-88.6-16.9-122.4-50.7c-53.2-53.3-64.5-132.6-33.9-197c6.5-13.7,101-161.3,140.6-222.9C238.7,12.9,245.2,9.8,251.8,9.8"/><path fill="#FFFFFF" d="M245.7,433.1c-32.6,0-63.2-12.7-86.3-35.7c-36.5-36.5-46.1-92.3-23.9-138.8c4.2-8.7,14.6-12.5,23.4-8.3.7,4.2,12.5,14.6,8.3,23.4c-15.8,33.2-9,72.9,17,98.9c16.4,16.4,38.2,25.5,61.5,25.5c23.2,0,45-9,61.5-25.5c6.9-6.9,18-6.9,24.8,0c6.9,6.8,6.9,18,0,24.8C309,420.4,278.3,433.1,245.7,433.1z"/></symbol>
+    <symbol id="arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 298 511.93"><path fill-rule="nonzero" d="M70.77 499.85c-16.24 16.17-42.53 16.09-58.69-.15-16.17-16.25-16.09-42.54.15-58.7l185.5-185.03L12.23 70.93c-16.24-16.16-16.32-42.45-.15-58.7 16.16-16.24 42.45-16.32 58.69-.15l215.15 214.61c16.17 16.25 16.09 42.54-.15 58.7l-215 214.46z"/></symbol>
+    <symbol id="twitter" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"><path d="M640.012 121.513c-23.528 10.524-48.875 17.516-75.343 20.634 27.118-16.24 47.858-41.977 57.756-72.615-25.347 14.988-53.516 25.985-83.363 31.866-24-25.5-58.087-41.35-95.848-41.35-72.508 0-131.21 58.736-131.21 131.198 0 10.228 1.134 20.232 3.355 29.882-109.1-5.528-205.821-57.757-270.57-137.222a131.423 131.423 0 0 0-17.764 66c0 45.497 23.102 85.738 58.347 109.207-21.508-.638-41.74-6.638-59.505-16.359v1.642c0 63.627 45.225 116.718 105.32 128.718-11.008 2.988-22.63 4.642-34.606 4.642-8.48 0-16.654-.874-24.78-2.35 16.783 52.11 65.233 90.095 122.612 91.205-44.989 35.245-101.493 56.233-163.09 56.233-10.63 0-20.988-.65-31.334-1.89 58.229 37.359 127.206 58.997 201.31 58.997 241.42 0 373.552-200.069 373.552-373.54 0-5.764-.13-11.35-.366-16.996 25.642-18.343 47.87-41.493 65.469-67.844l.059-.059z"/></symbol>
+    <symbol id="travel" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 83.69 122.88" style="enable-background:new 0 0 83.69 122.88" xml:space="preserve"><g><path d="M9.24,11.3l5.89,12.31c4.65-4.09,9.16-6.01,11.76-6.89l-5.4-11.38l-0.01-0.02l0,0c-0.3-0.62-0.83-1.06-1.45-1.27 c-0.63-0.21-1.33-0.2-1.97,0.1l-0.02,0.01l0,0l-7.62,3.71C9.78,8.19,9.34,8.72,9.13,9.33C8.91,9.95,8.93,10.66,9.24,11.3L9.24,11.3 z M77.89,7.08c0.25,0.2,0.45,0.46,0.59,0.78c1.48,3.59,2.11,8.08,2.11,12.81c0,5.08-0.72,10.5-1.89,15.4c3.19,5.9,5,12.64,5,19.79 v57.4c0,2.65-1.08,5.06-2.83,6.8c-1.74,1.74-4.15,2.83-6.8,2.83H9.58c-2.64,0-5.03-1.08-6.76-2.81C1.08,118.33,0,115.94,0,113.3 V55.85c0-7.18,1.83-13.94,5.04-19.86c-1.06-4.23-1.57-8.99-1.57-13.67c0-5.03,0.59-10.01,1.73-14.22c0.11-0.42,0.36-0.78,0.67-1.03 c0.62-1.14,1.58-2.1,2.82-2.71l7.62-3.71l0,0c0.02-0.01,0.04-0.02,0.06-0.03c1.59-0.75,3.35-0.8,4.9-0.27 c1.56,0.54,2.92,1.66,3.7,3.26l0,0c0.01,0.02,0.02,0.04,0.03,0.06l5.63,11.87c3.57-1,7.33-1.53,11.21-1.53l0,0 c3.9,0,7.68,0.54,11.27,1.55l5.64-11.88l0.02-0.03l0.01-0.02l0-0.01l0,0c0.78-1.59,2.14-2.72,3.7-3.26 c1.55-0.53,3.31-0.48,4.9,0.27c0.02,0.01,0.04,0.02,0.06,0.03l0,0l7.62,3.71C76.31,4.97,77.27,5.94,77.89,7.08L77.89,7.08z M8.06,31.23c1.24-1.7,2.61-3.3,4.09-4.79l-4.53-9.47c-0.16,1.75-0.24,3.55-0.24,5.35C7.39,25.34,7.61,28.37,8.06,31.23L8.06,31.23 z M75.69,31.31c0.62-3.5,0.98-7.15,0.98-10.64c0-1.51-0.07-2.97-0.21-4.38l-4.87,10.19C73.07,27.98,74.44,29.6,75.69,31.31 L75.69,31.31z M54.07,19.95l-0.08-0.02c-0.03-0.01-0.06-0.02-0.08-0.02c-0.23-0.06-0.39-0.11-0.57-0.2l-0.01,0 c-3.62-1.16-7.48-1.78-11.47-1.78l0,0c-3.93,0-7.72,0.61-11.3,1.73c-0.04,0.02-0.08,0.04-0.12,0.06c-0.18,0.08-0.34,0.13-0.57,0.2 c-0.03,0.01-0.06,0.02-0.08,0.02c-0.11,0.03-0.25,0.07-0.41,0.11c-5.43,1.91-10.31,5.02-14.31,9.02 C8.18,35.94,3.91,45.42,3.91,55.85v57.45c0,1.55,0.64,2.97,1.66,4c1.03,1.03,2.44,1.66,4,1.66h64.49c1.57,0,3-0.64,4.03-1.68 c1.04-1.04,1.68-2.46,1.68-4.03v-57.4c0-10.43-4.27-19.91-11.14-26.79C64.57,25,59.6,21.85,54.07,19.95L54.07,19.95z M68.64,23.61 l5.89-12.31c0.31-0.64,0.33-1.35,0.11-1.97c-0.21-0.61-0.65-1.14-1.28-1.45l-7.62-3.71l0,0l-0.02-0.01 c-0.63-0.3-1.34-0.32-1.97-0.1c-0.62,0.21-1.15,0.65-1.45,1.27l0,0l-0.01,0.01l0,0.01l-5.4,11.38 C59.48,17.6,63.99,19.52,68.64,23.61L68.64,23.61z M12.32,52.99c-0.28,1.04-1.35,1.65-2.39,1.37C8.89,54.07,8.27,53,8.56,51.96 c3-10.89,9-18.21,16.26-22.42c5.52-3.2,11.76-4.58,17.95-4.35c6.17,0.23,12.29,2.07,17.61,5.3c7.5,4.57,13.42,11.93,15.62,21.52 c0.24,1.05-0.42,2.1-1.47,2.34c-1.05,0.24-2.1-0.42-2.34-1.47C70.24,44.4,65,37.88,58.34,33.82c-4.75-2.89-10.21-4.53-15.71-4.74 c-5.48-0.2-10.99,1.01-15.85,3.83C20.35,36.64,15.01,43.19,12.32,52.99L12.32,52.99z M20.58,66.06h42.75c2.69,0,5.14,1.1,6.91,2.87 c1.77,1.77,2.87,4.22,2.87,6.91v26.24c0,2.69-1.1,5.14-2.87,6.91c-1.77,1.77-4.22,2.87-6.91,2.87H20.58c-2.69,0-5.14-1.1-6.91-2.87 c-1.77-1.77-2.87-4.22-2.87-6.91V75.85c0-2.69,1.1-5.14,2.87-6.91C15.44,67.16,17.89,66.06,20.58,66.06L20.58,66.06z M28.72,50.45 H55.8c1.27,0,2.31,1.04,2.31,2.31v6.33c0,1.27-1.04,2.31-2.31,2.31H28.72c-1.27,0-2.31-1.04-2.31-2.31v-6.33 C26.41,51.49,27.45,50.45,28.72,50.45L28.72,50.45z M24.21,84.79v5.98c0,1.02-0.83,1.85-1.85,1.85h0c-1.02,0-1.85-0.83-1.85-1.85 v-5.98h-5.81v17.3c0,1.61,0.66,3.08,1.73,4.15c1.07,1.07,2.53,1.73,4.15,1.73h42.75c1.61,0,3.08-0.66,4.15-1.73 c1.07-1.07,1.73-2.53,1.73-4.15v-17.3H24.21L24.21,84.79z M14.71,80.88H69.2v-5.03c0-1.61-0.66-3.08-1.73-4.15 c-1.06-1.07-2.53-1.73-4.15-1.73H20.58c-1.61,0-3.08,0.66-4.15,1.73c-1.06,1.06-1.73,2.53-1.73,4.15V80.88L14.71,80.88z"/></g></symbol>
+    <symbol id="medical" fill="currentColor" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 122.88" style="enable-background:new 0 0 122.88 122.88" xml:space="preserve"><g><path d="M50.59,0h21.7c3,0,5.72,1.22,7.69,3.19c1.97,1.97,3.19,4.69,3.19,7.69v28.83H112c3,0,5.72,1.22,7.69,3.19 c1.97,1.97,3.19,4.69,3.19,7.69v21.7c0,3-1.22,5.72-3.19,7.69c-1.97,1.97-4.69,3.19-7.69,3.19H83.17V112c0,3-1.22,5.72-3.19,7.69 c-1.97,1.97-4.69,3.19-7.69,3.19h-21.7c-3,0-5.72-1.22-7.69-3.19c-1.97-1.97-3.19-4.69-3.19-7.69V83.17H10.88 c-3,0-5.72-1.22-7.69-3.19C1.22,78.01,0,75.28,0,72.29v-21.7c0-3,1.22-5.72,3.19-7.69c1.97-1.97,4.69-3.19,7.69-3.19h28.83V10.88 c0-3,1.22-5.72,3.19-7.69C44.87,1.22,47.6,0,50.59,0L50.59,0z M72.29,7.03h-21.7c-1.06,0-2.02,0.43-2.72,1.14 c-0.7,0.7-1.14,1.66-1.14,2.72v32.34c0,1.94-1.57,3.51-3.51,3.51H10.88c-1.06,0-2.02,0.43-2.72,1.13c-0.7,0.7-1.14,1.66-1.14,2.72 v21.7c0,1.06,0.43,2.02,1.14,2.72c0.7,0.7,1.66,1.14,2.72,1.14h32.34c1.94,0,3.51,1.57,3.51,3.51V112c0,1.06,0.43,2.02,1.14,2.72 c0.7,0.7,1.66,1.14,2.72,1.14h21.7c1.06,0,2.02-0.43,2.72-1.14c0.7-0.7,1.13-1.66,1.13-2.72V79.66c0-1.94,1.57-3.51,3.51-3.51H112 c1.06,0,2.02-0.43,2.72-1.14c0.7-0.7,1.14-1.66,1.14-2.72v-21.7c0-1.06-0.43-2.02-1.14-2.72c-0.7-0.7-1.66-1.13-2.72-1.13H79.66 c-1.94,0-3.51-1.57-3.51-3.51V10.88c0-1.06-0.43-2.02-1.13-2.72C74.31,7.46,73.35,7.03,72.29,7.03L72.29,7.03z"/></g></symbol>
+    <symbol id="love-care" fill="currentColor" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 102.2" style="enable-background:new 0 0 122.88 102.2" xml:space="preserve"><g><path d="M66.41,85.97h21.91c1.76-1.75,3.69-3.57,5.65-5.42c4.11-3.89,8.4-7.95,12.81-13.03c5.04-5.81,5.58-7.82,7.11-13.51 c0.29-1.07,0.61-2.27,1.03-3.76l2.62-9.21l0.03-0.1c1.4-4.1,1.51-6.81,0.93-8.37c-0.18-0.48-0.41-0.8-0.68-0.97 c-0.21-0.14-0.49-0.19-0.78-0.16c-0.68,0.07-1.45,0.5-2.15,1.27l-7.78,18.53c-0.07,0.17-0.17,0.33-0.28,0.47 c-0.46,0.83-1.08,1.64-1.88,2.41L91.14,69.5c-0.75,0.84-2.04,0.91-2.87,0.16c-0.84-0.75-0.91-2.04-0.16-2.87l13.81-15.39 c0.06-0.07,0.12-0.14,0.19-0.2c1.43-1.36,1.88-2.83,1.63-3.9c-0.08-0.33-0.22-0.61-0.42-0.8c-0.19-0.17-0.44-0.29-0.75-0.32v0 c-1.23-0.13-3.04,0.78-5.25,3.39l0,0c-0.06,0.07-0.13,0.14-0.2,0.21l-5.35,4.72l-0.03,0.03c-5.79,5.48-8.28,6.78-12.82,9.15 c-0.95,0.5-1.99,1.04-3.28,1.74c-0.51,0.28-1.01,0.62-1.5,0.99c-0.52,0.4-1.02,0.81-1.49,1.21c-2.4,2.02-3.66,3.66-4.38,5.47 c-0.75,1.88-1.02,4.17-1.39,7.31c-0.15,1.27-0.26,2.52-0.35,3.77C66.47,84.78,66.44,85.38,66.41,85.97L66.41,85.97z M61.32,8.75 C65.4,4.5,68.25,0.83,74.53,0.1C86.31-1.25,97.15,10.82,91.2,22.7c-1.7,3.38-5.14,7.41-8.96,11.36c-4.19,4.34-8.82,8.58-12.07,11.8 l-8.85,8.78l-7.31-7.04c-8.8-8.48-23.15-19.14-23.62-32.36C30.06,5.98,37.36,0.05,45.77,0.16C53.28,0.25,56.43,3.99,61.32,8.75 L61.32,8.75L61.32,8.75z M56.47,85.97H34.55c-1.76-1.75-3.69-3.57-5.65-5.42c-4.11-3.89-8.4-7.95-12.81-13.03 c-5.04-5.81-5.58-7.82-7.11-13.51c-0.29-1.07-0.61-2.27-1.03-3.76l-2.62-9.21l-0.03-0.1c-1.4-4.1-1.51-6.81-0.93-8.37 c0.18-0.48,0.41-0.8,0.68-0.97c0.21-0.14,0.49-0.19,0.78-0.16C6.53,31.5,7.3,31.94,8,32.7l7.78,18.53 c0.07,0.17,0.17,0.33,0.28,0.47c0.46,0.83,1.08,1.64,1.88,2.41l13.8,15.39c0.75,0.84,2.04,0.91,2.87,0.16 c0.84-0.75,0.91-2.04,0.16-2.87L20.96,51.39c-0.06-0.07-0.12-0.14-0.19-0.2c-1.43-1.36-1.88-2.83-1.63-3.9 c0.08-0.33,0.22-0.61,0.42-0.8c0.19-0.17,0.44-0.29,0.75-0.32v0c1.23-0.13,3.05,0.78,5.25,3.39l0,0c0.06,0.07,0.13,0.14,0.2,0.21 l5.35,4.72l0.03,0.03c5.79,5.48,8.28,6.78,12.82,9.15c0.95,0.5,1.99,1.04,3.28,1.74c0.51,0.28,1.01,0.62,1.5,0.99 c0.52,0.4,1.02,0.81,1.49,1.21c2.4,2.02,3.66,3.66,4.38,5.47c0.75,1.88,1.02,4.17,1.39,7.31c0.15,1.27,0.26,2.52,0.35,3.77 C56.41,84.78,56.44,85.38,56.47,85.97L56.47,85.97z M29.45,86.67c-0.31,0.36-0.5,0.83-0.5,1.34v12.14c0,1.13,0.92,2.04,2.04,2.04 h27.58c1.13,0,2.04-0.91,2.04-2.04V87.9c0-1.3-0.08-2.7-0.17-4c-0.09-1.33-0.21-2.65-0.36-3.96c-0.4-3.43-0.7-5.94-1.66-8.35 c-0.99-2.47-2.58-4.6-5.53-7.09c-0.54-0.46-1.09-0.92-1.67-1.35c-0.61-0.46-1.27-0.9-2.01-1.31c-1.2-0.65-2.32-1.24-3.34-1.78 c-4.2-2.2-6.5-3.4-11.91-8.52c-0.04-0.04-0.09-0.08-0.13-0.11l-5.22-4.61c-3.19-3.73-6.31-4.97-8.7-4.71l-0.01,0v0 c-1.17,0.12-2.17,0.58-2.97,1.28l-5.27-12.56l-0.01,0c-0.08-0.18-0.18-0.35-0.31-0.51c-1.46-1.75-3.31-2.77-5.08-2.95 c-1.21-0.12-2.38,0.14-3.4,0.8c-0.97,0.63-1.77,1.61-2.27,2.96c-0.88,2.35-0.86,6,0.86,11.05l2.6,9.15 c0.38,1.32,0.71,2.59,1.02,3.71c1.7,6.35,2.3,8.6,7.97,15.12c4.49,5.17,8.88,9.33,13.1,13.32C27.23,84.55,28.33,85.6,29.45,86.67 L29.45,86.67z M33.35,90.05c0.27,0.06,0.55,0.06,0.83,0h22.34v8.06H33.03v-8.06H33.35L33.35,90.05z M93.43,86.67 c0.31,0.36,0.5,0.83,0.5,1.34v12.14c0,1.13-0.91,2.04-2.04,2.04H64.32c-1.13,0-2.04-0.91-2.04-2.04V87.9c0-0.07,0-0.15,0.01-0.22 c0.03-1.31,0.08-2.58,0.16-3.78c0.09-1.33,0.21-2.65,0.36-3.96c0.4-3.43,0.7-5.94,1.66-8.35c0.99-2.47,2.58-4.6,5.53-7.09 c0.54-0.46,1.09-0.92,1.67-1.35c0.61-0.46,1.27-0.9,2.01-1.31c1.2-0.65,2.32-1.24,3.34-1.78c4.2-2.2,6.5-3.4,11.91-8.52 c0.04-0.04,0.09-0.08,0.13-0.11l5.22-4.61c3.19-3.73,6.31-4.97,8.7-4.71l0.01,0v0c1.17,0.12,2.17,0.58,2.97,1.28l5.27-12.56l0.01,0 c0.08-0.18,0.18-0.35,0.31-0.51c1.46-1.75,3.31-2.77,5.08-2.95c1.21-0.12,2.38,0.14,3.4,0.8c0.97,0.63,1.77,1.61,2.27,2.96 c0.88,2.35,0.86,6-0.86,11.05l-2.6,9.15c-0.38,1.32-0.71,2.59-1.02,3.71c-1.7,6.35-2.3,8.6-7.97,15.12 c-4.49,5.17-8.88,9.33-13.1,13.32C95.65,84.55,94.55,85.6,93.43,86.67L93.43,86.67z M89.53,90.05c-0.27,0.06-0.55,0.06-0.83,0 H66.36v8.06h23.49v-8.06H89.53L89.53,90.05z"/></g></symbol>
+    <symbol id="instagram" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><path fill="#fff" fill-rule="nonzero" d="M170.663 256.157c-.083-47.121 38.055-85.4 85.167-85.483 47.121-.092 85.407 38.03 85.499 85.16.091 47.129-38.047 85.4-85.176 85.492-47.112.09-85.399-38.039-85.49-85.169zm-46.108.091c.141 72.602 59.106 131.327 131.69 131.186 72.592-.141 131.35-59.09 131.209-131.692-.141-72.577-59.114-131.335-131.715-131.194-72.585.141-131.325 59.115-131.184 131.7zm237.104-137.091c.033 16.953 13.817 30.681 30.772 30.648 16.961-.033 30.689-13.811 30.664-30.764-.033-16.954-13.818-30.69-30.78-30.657-16.962.033-30.689 13.818-30.656 30.773zm-208.696 345.4c-24.958-1.087-38.511-5.234-47.543-8.709-11.961-4.629-20.496-10.178-29.479-19.094-8.966-8.95-14.532-17.46-19.202-29.397-3.508-9.032-7.73-22.569-8.9-47.527-1.269-26.982-1.559-35.077-1.683-103.432-.133-68.339.116-76.434 1.294-103.441 1.069-24.942 5.242-38.512 8.709-47.536 4.628-11.977 10.161-20.496 19.094-29.479 8.949-8.982 17.459-14.532 29.403-19.202 9.025-3.525 22.561-7.714 47.511-8.9 26.998-1.277 35.085-1.551 103.423-1.684 68.353-.132 76.448.108 103.456 1.295 24.94 1.086 38.51 5.217 47.527 8.709 11.968 4.628 20.503 10.144 29.478 19.094 8.974 8.95 14.54 17.443 19.21 29.412 3.524 9 7.714 22.553 8.892 47.494 1.285 26.999 1.576 35.095 1.7 103.433.132 68.355-.117 76.451-1.302 103.441-1.087 24.958-5.226 38.52-8.709 47.561-4.629 11.952-10.161 20.487-19.103 29.471-8.941 8.949-17.451 14.531-29.403 19.201-9.009 3.517-22.561 7.714-47.494 8.9-26.998 1.269-35.086 1.559-103.448 1.684-68.338.132-76.424-.125-103.431-1.294zM149.977 1.773c-27.239 1.285-45.843 5.648-62.101 12.018-16.829 6.561-31.095 15.354-45.286 29.604C28.381 57.653 19.655 71.944 13.144 88.79c-6.303 16.299-10.575 34.912-11.778 62.168C.172 178.264-.102 186.973.031 256.489c.133 69.508.439 78.234 1.741 105.547 1.302 27.231 5.649 45.828 12.019 62.093 6.569 16.83 15.353 31.088 29.611 45.288 14.25 14.201 28.55 22.918 45.404 29.438 16.282 6.295 34.902 10.583 62.15 11.778 27.305 1.203 36.022 1.468 105.521 1.335 69.532-.132 78.25-.439 105.555-1.733 27.239-1.303 45.826-5.665 62.1-12.019 16.829-6.586 31.095-15.353 45.288-29.611 14.191-14.251 22.917-28.55 29.428-45.405 6.304-16.282 10.592-34.903 11.777-62.134 1.195-27.322 1.478-36.048 1.344-105.556-.133-69.516-.447-78.225-1.741-105.523-1.294-27.255-5.657-45.844-12.019-62.118-6.577-16.829-15.352-31.079-29.602-45.287-14.25-14.192-28.55-22.935-45.404-29.429-16.29-6.305-34.903-10.601-62.15-11.779C333.747.164 325.03-.102 255.506.031c-69.507.133-78.224.431-105.529 1.742z"/></symbol>
+    <symbol id="healthy-food" fill="currentColor" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 116.97"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>nutrition-protein</title><path class="cls-1" d="M67.83,27.18c-10.47-3.29-19.24-1-25.44,4.52a5.69,5.69,0,0,1,3.08,3.7c4,15.23,7,8.67,8.45,14.26a51.53,51.53,0,0,1,2,12.18,5.05,5.05,0,0,1,.55-.18,5.7,5.7,0,0,1,7,4.06c2.84,10.68,2.89,17.68.41,23C61.7,93.12,58.22,95.86,53.4,98c.93.91,1.9,1.81,2.92,2.69,8,5.72,15,4.94,21.49,1.4,5.17,2.45,10.63,3.42,16.5,1.22,8.63-3.24,17.42-16,21.56-24,9-17.3,12.12-39.5-8.06-50.32-5.51-2.95-12.39-3.82-21.11-1.86a26.9,26.9,0,0,1-6.55,1.31,36.06,36.06,0,0,1,1.71-11.81,28,28,0,0,1,7.74-12A2.69,2.69,0,1,0,86,.71,33.2,33.2,0,0,0,76.75,15l-.23.71C71,6,61.56.94,46.16,3.3l-6.08.63C44.53,13.18,50,22.61,61.36,24h0c4.32.53,9-.44,14-3.05L75.1,22l.06,0a44.91,44.91,0,0,0-.39,6.47,33.16,33.16,0,0,1-6.94-1.3ZM17.55,31.9C23,23.24,21,15.37,7.62,8.76c-4,10.07-2.35,20.82,9.93,23.14ZM44.2,101.06,49,99l6.21,14.35c1.36,3.15-3.43,5.22-4.79,2.07l-6.2-14.35ZM31.38,58.32C40.52,55.19,43.83,51.5,40,36.85c-7.18,5.67-15.53,9.73-8.58,21.47ZM24.85,43.26c8.52-2.93,11.61-6.36,8-20-6.68,5.27-14.44,9.05-8,20ZM42.07,96.52C31.23,102.23,25,102.09,14.82,85.79c11.47-1.71,22.46-5.87,27.25,10.73Zm-8.22-19.1c-9.64,5.08-15.23,5-24.24-9.54,10.2-1.52,20-5.24,24.24,9.54Zm-7.32-17C18,64.93,13,64.81,5,52c9.05-1.34,17.72-4.64,21.51,8.47ZM20,45.34c-8,4.2-12.58,4.1-20-7.89,8.42-1.26,16.51-4.32,20,7.89Zm27,49c11.59-4,15.79-8.64,10.86-27.2C48.79,74.36,38.22,79.51,47,94.37ZM38.75,75.3c10.3-3.53,14-7.69,9.66-24.19-8.1,6.38-17.5,11-9.66,24.19ZM45.54,6.55c11.64,3.19,19.08,4.6,28.34,12.91C62.1,16.56,55,14,45.54,6.55Z"/></symbol>
+    <symbol id="facebook-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 509 509"><g fill-rule="nonzero"><path  d="M509 254.5C509 113.94 395.06 0 254.5 0S0 113.94 0 254.5C0 373.86 82.17 474 193.02 501.51V332.27h-52.48V254.5h52.48v-33.51c0-86.63 39.2-126.78 124.24-126.78 16.13 0 43.95 3.17 55.33 6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73 0-57.86 15.81-57.86 56.91v27.5h83.13l-14.28 77.77h-68.85v174.87C411.35 491.92 509 384.62 509 254.5z"/><path fill="transparent" d="M354.18 332.27l14.28-77.77h-83.13V227c0-41.1 16.13-56.91 57.86-56.91 12.96 0 23.39.32 29.4.95v-70.5c-11.38-3.16-39.2-6.33-55.33-6.33-85.04 0-124.24 40.16-124.24 126.78v33.51h-52.48v77.77h52.48v169.24c19.69 4.88 40.28 7.49 61.48 7.49 10.44 0 20.72-.64 30.83-1.86V332.27h68.85z"/></g></symbol>
+    <symbol id="facebook-blue" fill="currentColor" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 509 509"><g fill-rule="nonzero"><path d="M509 254.5C509 113.94 395.06 0 254.5 0S0 113.94 0 254.5C0 373.86 82.17 474 193.02 501.51V332.27h-52.48V254.5h52.48v-33.51c0-86.63 39.2-126.78 124.24-126.78 16.13 0 43.95 3.17 55.33 6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73 0-57.86 15.81-57.86 56.91v27.5h83.13l-14.28 77.77h-68.85v174.87C411.35 491.92 509 384.62 509 254.5z"/><path fill="#fff" d="M354.18 332.27l14.28-77.77h-83.13V227c0-41.1 16.13-56.91 57.86-56.91 12.96 0 23.39.32 29.4.95v-70.5c-11.38-3.16-39.2-6.33-55.33-6.33-85.04 0-124.24 40.16-124.24 126.78v33.51h-52.48v77.77h52.48v169.24c19.69 4.88 40.28 7.49 61.48 7.49 10.44 0 20.72-.64 30.83-1.86V332.27h68.85z"/></g></symbol>
+    <symbol id="email" fill="currentColor" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.879 88.855" enable-background="new 0 0 122.879 88.855" xml:space="preserve"><g><path d="M7.048,0h108.784c1.939,0,3.701,0.794,4.977,2.069c1.277,1.277,2.07,3.042,2.07,4.979v74.759 c0,1.461-0.451,2.822-1.221,3.951c-0.141,0.365-0.361,0.705-0.662,0.994c-0.201,0.189-0.422,0.344-0.656,0.461 c-1.225,1.021-2.799,1.643-4.508,1.643H7.048c-1.937,0-3.701-0.793-4.979-2.07C0.794,85.51,0,83.748,0,81.807V7.048 c0-1.941,0.792-3.704,2.068-4.979C3.344,0.792,5.107,0,7.048,0L7.048,0z M5.406,78.842l38.124-38.22L5.406,9.538V78.842 L5.406,78.842z M47.729,44.045L8.424,83.449h105.701L76.563,44.051L64.18,54.602l0,0c-0.971,0.83-2.425,0.877-3.453,0.043 L47.729,44.045L47.729,44.045z M80.674,40.549l36.799,38.598V9.198L80.674,40.549L80.674,40.549z M8.867,5.406l53.521,43.639 l51.223-43.639H8.867L8.867,5.406z"/></g></symbol>
+</svg>
+<!--   App Header   -->
+
+<header class="fixed left-0 right-0 z-50 hidden md:flex items-center mx-auto py-6 bg-gray-250">
+    <!--   Logo & Meno   -->
+    <div class="container flex-center justify-between">
+        <img class="w-52 xl:w-[300px]" src="./Image/main-logo.png" alt="logo">
+        <div class="flex-center">
+            <ul class="flex-center font-semibold lg:text-base child:ml-6 xl:child:ml-8">
+                <li>
+                    <a data-section="home" class="hover:text-orange-640 transition-all header-menu__link header-menu__item--active" href="#">Home</a>
+                </li>
+                <li>
+                    <a data-section="projects" class="hover:text-orange-640 transition-all header-menu__link" href="#">Projects</a>
+                </li>
+                <li>
+                    <a data-section="about-us" class="hover:text-orange-640 transition-all header-menu__link" href="#">About Us</a>
+                </li>
+                <li>
+                    <a data-section="what-wedo" class="hover:text-orange-640 transition-all header-menu__link" href="#">What We Do</a>
+                </li>
+                <li>
+                    <a data-section="community" class="hover:text-orange-640 transition-all header-menu__link" href="#">Community</a>
+                </li>
+            </ul>
+            <!--   header btn   -->
+            <a class="btn hidden lg:flex bg-brown-100 border-none ml-8 hover:text-orange-640 transition-all">Donate Now</a>
+        </div>
+    </div>
+</header>
+
+<!--   Mobile Meno   -->
+<div class="flex-center justify-between md:hidden px-4 h-16 ">
+    <!--   Mobile Meno Logo  -->
+    <img class="w-52" src="./Image/main-logo.png" alt="logo">
+    <!--   Mobile Hamburger Menu   -->
+    <div class="hamburger-menu">
+        <span class="line"></span>
+        <!--   Mobile Menu List  -->
+        <div class="menu fixed -left-64 top-0 bottom-0 w-64 bg-gray-250 px-5 pt-4 transition-all z-50">
+            <h2 class="font-PoppinsBold text-center tracking-widest text-2xl border-b border-b-zinc-950 mb-4 pb-4">
+                Global <span class="text-orange-640">Charity</span>
+            </h2>
+            <ul class="mobile-menu font-PoppinsSemiBold child:mb-8">
+                <li>
+                    <a class="mobile-menu__link mobile-menu__link--active">Home</a>
+                </li>
+                <li>
+                    <a class="mobile-menu__link">Projects</a>
+                </li>
+                <li>
+                    <a class="mobile-menu__link">About Us</a>
+                </li>
+                <li>
+                    <a class="mobile-menu__link">What We Do</a>
+                </li>
+                <li>
+                    <a class="mobile-menu__link">Community</a>
+                </li>
+            </ul>
+            <a class="btn bg-brown-100 border-none mx-auto hover:text-orange-640 transition-all">Donate Now</a>
+        </div>
+    </div>
+</div>
+
+<!--   App Main   -->
+<main>
+    <section id="home" class="home">
+        <div class="container overflow-y-hidden overflow-x-hidden h-full md:min-h-screen flex-center text-center md:text-start justify-center md:justify-start">
+            <div class="text-white ">
+                <h1 class="font-PoppinsBold text-[80px] sm:text-[120px] text-orange-640">Donate</h1>
+                <h2 class="font-PoppinsBold text-5xl sm:text-6xl -mt-2 sm:-mt-10">4 a better world</h2>
+                <p class="max-w-[700px] min-w-[350px] hidden xs:block mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas purus viverra accumsan in nisl nisi</p>
+                <div class="flex-center justify-center md:justify-start xs:gap-x-12 gap-y-8 mt-4 xs:mt-8 flex-wrap">
+                    <a class="btn  hover:bg-orange-640 transition-all">Donate Now</a>
+                    <a class="btn  hover:bg-orange-640 transition-all">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <!--   Section Head   -->
+        <div class="head-section">
+            <h2 class="head-section__title">Projects</h2>
+            <span class="head-section__line"></span>
+        </div>
+        <!--   Section Content  -->
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <div class="flex-center justify-center flex-col text-center bg-orange-250 rounded-xl py-10 px-3 lg:px-2 hover:text-white hover:bg-orange-260 transition-all">
+                    <svg class="w-14 h-14 text-orange-640">
+                        <use href="#healthy-food"></use>
+                    </svg>
+                    <h3 class="font-PoppinsSemiBold text-[20px] mt-4">Healthy Food</h3>
+                    <p class="max-w-[300px] mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a class="btn mt-5 text-brown-100">Make a donation</a>
+                </div>
+                <div class=" flex-center justify-center flex-col text-center bg-orange-250 rounded-xl  py-10 px-3 lg:px-2 hover:text-white hover:bg-orange-260 transition-all">
+                    <svg class="w-14 h-14 text-orange-640">
+                        <use href="#education"></use>
+                    </svg>
+                    <h3 class="font-PoppinsSemiBold text-[20px] mt-4">Education</h3>
+                    <p class="max-w-[300px] mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a class="btn mt-5 text-brown-100">Make a donation</a>
+                </div>
+                <div class=" flex-center justify-center flex-col text-center bg-orange-250 rounded-xl  py-10 px-3 lg:px-2 hover:text-white hover:bg-orange-260 transition-all">
+                    <svg class="w-14 h-14 text-orange-640">
+                        <use href="#medical"></use>
+                    </svg>
+                    <h3 class="font-PoppinsSemiBold text-[20px] mt-4">Medical</h3>
+                    <p class="max-w-[300px] mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a class="btn mt-5 text-brown-100">Make a donation</a>
+                </div>
+                <div class=" flex-center justify-center flex-col text-center bg-orange-250 rounded-xl  py-10 px-3 lg:px-2 hover:text-white hover:bg-orange-260 transition-all">
+                    <svg class="w-14 h-14 text-orange-640">
+                        <use href="#drop"></use>
+                    </svg>
+                    <h3 class="font-PoppinsSemiBold text-[20px] mt-4">Pure Water</h3>
+                    <p class="max-w-[300px] mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a class="btn mt-5 text-brown-100">Make a donation</a>
+                </div>
+                <div class=" flex-center justify-center flex-col text-center bg-orange-250 rounded-xl  py-10 px-3 lg:px-2 hover:text-white hover:bg-orange-260 transition-all">
+                    <svg class="w-14 h-14 text-orange-640">
+                        <use href="#love-care"></use>
+                    </svg>
+                    <h3 class="font-PoppinsSemiBold text-[20px] mt-4">Love & Care</h3>
+                    <p class="max-w-[300px] mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a class="btn mt-5 text-brown-100">Make a donation</a>
+                </div>
+                <div class=" flex-center justify-center flex-col text-center bg-orange-250 rounded-xl  py-10 px-3 lg:px-2 hover:text-white hover:bg-orange-260 transition-all">
+                    <svg class="w-14 h-14 text-orange-640">
+                        <use href="#travel"></use>
+                    </svg>
+                    <h3 class="font-PoppinsSemiBold text-[20px] mt-4">Travel Activities</h3>
+                    <p class="max-w-[300px] mt-5 line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <a class="btn mt-5 text-brown-100">Make a donation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <!--   Section Head   -->
+        <div class="head-section">
+            <h2 class="head-section__title">About Us</h2>
+            <span class="head-section__line"></span>
+        </div>
+        <!--   Section About-us Content   -->
+        <div class="container">
+            <!--   Section About-us Content Wrapper  -->
+            <div class="flex-center flex-col lg:flex-row justify-center lg:gap-x-20 xl:gap-x-36 basis-1/2 lg:max-h-[695px]">
+                <!--   Section About-us Content Right  -->
+                <div class="hidden lg:flex relative">
+                    <img class="rounded-xl block max-h-[670px] max-w-[514px]" src="./Image/jpg-img/Artboard-2.jpg" alt="Artboard">
+                    <div class="w-[514px] h-[695px] overflow-hidden rounded-xl absolute top-[-28px] left-5 bottom-0 transition-all">
+                        <img class="about-us__img block w-full h-full" src="./Image/jpg-img/girl-img.png" alt="image">
+                    </div>
+                    <span class="next-btn rounded-full flex-center justify-center w-12 h-12 absolute top-[275px] right-[-44px] bg-orange-640 cursor-pointer">
+                                <svg class="w-5 h-5 text-brown-100">
+                                    <use href="#arrow-right"></use>
+                                </svg>
+                            </span>
+                </div>
+                <!-- Swiper -->
+                <div class="flex lg:hidden">
+                    <div class="swiper w-[240px] h-[320px] sm:w-[480px] sm:h-[590px] ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide rounded-xl">
+                                <img class="h-full w-full" src="./Image/jpg-img/girl-img.png" alt="children">
+                            </div>
+                            <div class="swiper-slide rounded-xl">
+                                <img class="h-full w-full" src="./Image/jpg-img/boy-img.jpeg" alt="children">
+                            </div>
+                            <div class="swiper-slide rounded-xl">
+                                <img class="h-full w-full" src="./Image/jpg-img/girl2-img.jpg" alt="children">
+                            </div>
+                            <div class="swiper-slide rounded-xl">
+                                <img class="h-full w-full" src="./Image/jpg-img/boy2-img.jpeg" alt="children">
+                            </div>
+                            <div class="swiper-slide rounded-xl">
+                                <img class="h-full w-full" src="./Image/jpg-img/boy3-img.jpeg" alt="children">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <!--   Section About-us Content Left  -->
+                <div class="relative mt-10 lg:mt-0 lg:max-w-[500px] h-[580px] xs:h-[485px] lg:h-[695px]">
+                    <div class="flex flex-col justify-start items-start ">
+                        <img class="block w-40" src="./Image/helping-today.png" alt="helping-today">
+                        <h2 class="font-PoppinsBold text-2xl sm:text-4xl xl:text-5xl mb-4 sm:mb-8 lg:mb-12">Our Goal is Helping Poor People</h2>
+                        <p>Today, we supported the education of 20000 children born in poor families cross 12 undeveloped countries over the world. in the future, our goals are:</p>
+                        <ul class="pl-4 xl:pl-0 mt-6 border-l-2 border-l-orange-650 xl:border-hidden">
+                            <li class="flex items-start xl:items-center font-PoppinsSemiBold text-base xs:text-lg xl:text-xl mb-6">
+                                <svg class="hidden xl:block w-5 h-5 text-orange-150 mr-4">
+                                    <use href="#check-mark"></use>
+                                </svg>
+                                Have enough food for life.
+                            </li>
+                            <li class="flex items-start xl:items-center font-PoppinsSemiBold text-base xs:text-lg xl:text-xl mb-6">
+                                <svg class="hidden xl:block w-5 h-5 text-orange-150 mr-4">
+                                    <use href="#check-mark"></use>
+                                </svg>
+                                Poor children can return to school.
+                            </li>
+                            <li class="flex items-start xl:items-center font-PoppinsSemiBold text-base xs:text-lg xl:text-xl mb-6">
+                                <svg class="hidden xl:block w-5 h-5 text-orange-150 mr-4">
+                                    <use href="#check-mark"></use>
+                                </svg>
+                                Support poor people to have better jobs.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-center absolute bottom-0 py-5 px-12 xl:py-6 xl:px-16 text-white bg-brown-100 rounded-xl">
+                        <svg class="hidden xs:block w-12 xl:w-20 h-12 xl:h-20 mr-4">
+                            <use href="#money"></use>
+                        </svg>
+                        <div class="flex flex-col text-center">
+                            <span class="font-PoppinsSemiBold text-3xl xs:text-4xl xl:text-5xl">86,700</span>
+                            <span>Successful Campaigns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="what-wedo">
+          <!--   Section Head   -->
+          <div class="head-section">
+            <h2 class="head-section__title">What We Do</h2>
+            <span class="head-section__line"></span>
+        </div>
+        <div class="container">
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 child:cursor-pointer mb-10">
+                <div class="relative flex-center justify-center flex-col text-center rounded-xl
+                transition-all overflow-hidden max-h-[550px]">
+                    <div class="group h-full w-full relative overflow-hidden rounded-xl">
+                        <img class="relative h-full w-full object-cover" src="./Image/jpg-img/education-img.jpeg" alt="education">
+                        <div class="absolute inset-0 w-full h-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-gradient-to-l from-orange-150/30 to-orange-150/30 transition-all delay-100">
+                            <h3 class="font-PoppinsBold absolute inset-0 flex-center justify-center text-center max-w-[180px] mx-auto text-white text-3xl line-clamp-3">Poor children education</h3>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-[-11px] skew-x-[-20deg] bg-brown-100">
+                        <a class="block text-white py-3 px-6 skew-x-[20deg]">Read More</a>
+                    </div>
+                </div>
+                 <div class="relative flex-center justify-center flex-col text-center rounded-xl
+                transition-all overflow-hidden max-h-[550px]">
+                     <div class="group h-full w-full relative overflow-hidden rounded-xl">
+                         <img class="relative h-full w-full object-cover" src="./Image/jpg-img/voluntree.jpeg" alt="voluntree">
+                         <div class="absolute inset-0 w-full h-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-gradient-to-l from-orange-150/30 to-orange-150/30 transition-all delay-100">
+                             <h3 class="font-PoppinsBold absolute inset-0 flex-center justify-center text-center max-w-[180px] mx-auto text-white text-3xl line-clamp-3">How to become volunteer</h3>
+                         </div>
+                     </div>
+                     <div class="absolute bottom-0 left-[-11px] skew-x-[-20deg] bg-brown-100">
+                         <a class="block text-white py-3 px-6 skew-x-[20deg]">Read More</a>
+                     </div>
+                 </div>
+                 <div class="relative flex-center justify-center flex-col text-center rounded-xl
+                transition-all overflow-hidden max-h-[550px]">
+                     <div class="group h-full w-full relative overflow-hidden rounded-xl">
+                         <img class="relative h-full w-full object-cover" src="./Image/jpg-img/better-lives.jpeg" alt="better-lives">
+                         <div class="absolute inset-0 w-full h-full opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-gradient-to-l from-orange-150/30 to-orange-150/30 transition-all delay-100">
+                             <h3 class="font-PoppinsBold absolute inset-0 flex-center justify-center text-center max-w-[180px] mx-auto text-white text-3xl line-clamp-3">More charity better lives</h3>
+                         </div>
+                     </div>
+                     <div class="absolute bottom-0 left-[-11px] skew-x-[-20deg] bg-brown-100">
+                         <a class="block text-white py-3 px-6 skew-x-[20deg]">Read More</a>
+                     </div>
+                 </div>
+             </div>
+        </div>
+
+
+    </section>
+    <section class="community">
+        <!--   Section Head   -->
+        <div class="head-section">
+            <h2 class="head-section__title">Community</h2>
+            <span class="head-section__line"></span>
+        </div>
+        <!--   Section Community Content   -->
+        <div class="container">
+            <!--   Section Community Content Wrapper  -->
+            <div class="flex-center flex-col-reverse justify-center md:mt-32 xl:flex-row lg:gap-x-16 xl:gap-x-36 xl:basis-1/2 h-auto xl:max-h-[695px]">
+                <!--   Section About-us Content Right  -->
+                <div class="flex-center flex-col justify-start md:mt-14 xl:mt-0 xl:flex  max-w-[514px] xl:max-w-[500px] h-auto xl:h-[695px]">
+                    <h4 class="font-PoppinsBold text-center text-2xl xs:text-3xl xl:text-2xl">
+                           You can bring clean energy to others
+                       </h4>
+                    <h5 class="font-PoppinsSemiBold text-center text-base xl:text-lg">
+                           by starting a fundraising campaign
+                       </h5>
+                    <div class="font-PoppinsBold justify-center text-white flex-center gap-7 mt-12 flex-wrap">
+                           <a class="flex-center justify-center w-full xs:w-80 h-14 bg-gradient-to-r from-blue-650 to-blue-600 " href="#">
+                               <svg class="w-8 h-8 text-transparent pb-1">
+                                   <use href="#facebook-blue"></use>
+                               </svg>
+                               <span>
+                               Sing Up with Facebook
+                           </span>
+                           </a>
+                           <a class="flex-center justify-center w-full xs:w-80 h-14 bg-gradient-to-r from-lime-500 to-lime-400 gap-x-1.5" href="#">
+                               <svg class="w-8 h-8">
+                                   <use href="#email"></use>
+                               </svg>
+                               <span>
+                                Sing Up with Email
+                           </span>
+                           </a>
+                       </div>
+                    <p class="font-PoppinsSemiBold mt-6">
+                           Or you can <a class="underline" href="#">make a donation</a>
+                       </p>
+                    <span class="block w-full h-0.5 mt-12 bg-orange-650"></span>
+                    <h2 class="font-PoppinsBold text-center text-xl xs:text-3xl xl:text-5xl mt-8 xl:mt-28">
+                        You Can Help Us to Change One Person Live Through Donation
+                    </h2>
+                </div>
+                <!--   Section About-us Content Left  -->
+                <div class="hidden md:inline-block relative">
+                    <img class="rounded-xl block md:max-h-[670px] md:max-w-[514px]" src="./Image/jpg-img/Artboard-2.jpg" alt="Artboard">
+                    <img class="block absolute md:w-[514px] top-[-28px] right-5 bottom-0 md:h-[695px] rounded-xl" src="./Image/jpg-img/dream-big.jpeg" alt="dream">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--   App Footer   -->
+<footer class="mt-40 bg-brown-100">
+    <div class="container">
+        <!--   Scrool Top   -->
+        <a href="#" id="scroll-top" class="flex-center justify-center w-10 h-10 bg-orange-640 absolute -top-5 right-0 left-0 mx-auto">
+            <svg class="w-5 h-5 text-white">
+                <use href="#arrow-up"></use>
+            </svg>
+        </a>
+
+<!--   Footer wrapper   -->
+        <div class="flex-center flex-col md:flex-row md:justify-between py-8 md:py-12 text-white">
+            <!--   Footer wrapper Right   -->
+            <div class="basis-1/2 border-b-2 border-orange-650 md:border-none">
+                <!--   Footer Form   -->
+                   <form>
+                       <label class="text-sm lg:text-lg">
+                           <span class="font-PoppinsBold text-lg lg:text-2xl">Join the Movement:</span>
+                           Never Miss a Thing.
+                       </label>
+                       <div>
+                           <input class="px-1 py-1 sm:py-2 sm:px-4 lg:py-2.5 lg:px-12 outline-none border-none text-center mt-3" id="email" name="email" type="email" placeholder="Enter Your Email">
+                           <button class="font-PoppinsBold outline-none border-none px-1 py-1 sm:py-2 lg:py-2.5 sm:px-4 lg:px-8 bg-orange-640 mt-4 xs:mt-0" type="submit" >Submit</button>
+                       </div>
+                   </form>
+                <!--   Footer Content   -->
+                <div>
+                    <div class="font-PoppinsSemiBold  flex-center flex-wrap text-sm mt-8">
+                        <span class="inline-block mr-4">MAIL: Contant@ourcharity.com</span>
+                        <span class="inline-block md:mt-3 xl:mt-0">PHONE: +24 3772 120 091 / +56452 4567</span>
+                    </div>
+                    <div class="mt-7 mb-5 md:mb-0">
+                        <p class="font-PoppinsSemiBold mb-2">Contact With Us:</p>
+                        <div class="flex-center gap-x-4 text-white">
+                            <a href="#">
+                                <svg class="w-7 h-7">
+                                    <use href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="w-7 h-7">
+                                    <use href="#facebook-white"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="w-7 h-7">
+                                    <use href="#instagram"></use>
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--   Footer wrapper Left  -->
+            <div class="basis-1/2 flex justify-center sm:justify-start flex-wrap md:flex-nowrap text-center md:text-start max-w-[512px] max-w-auto mt-5 md:mt-0">
+                <div class="flex flex-col sm:mr-12 lg:ml-12 md:ml-6 max-w-[400px] mb-3 md::mb-0">
+                    <h5 class="font-PoppinsSemiBold text-xl mb-4">Who We Are</h5>
+                    <ul class="child:text-sm child:mb-1">
+                        <li class="">
+                            <a href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Cantact Us
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Financial Responsibility
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Legal Information
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Global Network
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col sm:mr-12 max-w-[400px] mb-3 sm:mb-0">
+                    <h5 class="font-PoppinsSemiBold text-xl mb-4">Whate We Do</h5>
+                    <ul class="child:text-sm child:mb-1">
+                        <li class="">
+                            <a href="#">
+                                Success Stories
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Program Areas
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Campaigns
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Emergency response
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col max-w-[400px]">
+                    <h5 class="font-PoppinsSemiBold text-xl mb-4">Where We Work</h5>
+                    <ul class="child:text-sm child:mb-1">
+                        <li class="">
+                            <a href="#">
+                                Africa
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Asia
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                USA
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                Middle East
+                            </a>
+                        </li>
+                        <li class="">
+                            <a  href="#">
+                                Eurasia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./Script/script.js"></script>
+<script src="./Script/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        effect: "cards",
+        grabCursor: true,
+    });
+</script>
+</body>
+</html>         
